@@ -1,22 +1,74 @@
-.button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
+/* Background styling */
+body {
+    background: url('https://www.pixelstalk.net/wp-content/uploads/images1/Free-Christmas-Wallpaper-HD.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: red;
+    font-family: 'Mountains of Christmas', cursive, sans-serif;
     text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #04AA6D;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  
-  .button:hover {background-color: #3e8e41}
-  
-  .button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4em;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 2px 2px 8px red, 4px 4px 12px green;
+}
+
+/* Festive button styling */
+.christmas-button {
+    font-size: 1.5em;
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, red, green);
+    border: 5px solid gold;
+    border-radius: 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.christmas-button:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.santa-gif {
+    width: 200px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    animation: bounce 3s infinite ease-in-out;
+}
+
+/* Snowflake styles */
+.snowflake {
+    position: fixed;
+    top: 0;
+    font-size: 24px;
+    color: white;
+    pointer-events: none;
+    z-index: 1000;
+    animation: fall linear infinite;
+}
+
+/* Animation for falling snowflakes */
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
